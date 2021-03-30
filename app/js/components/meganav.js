@@ -31,6 +31,7 @@ $( document ).ready(function() {
 		if(!$(e.target).hasClass('mega-nav') && !$(e.target).hasClass('header__mega-nav') && !$(e.target).hasClass('link--menu')) {
 			$('.mega-nav').removeClass('is-active');
 			$('.link--mobile-menu').removeClass('is-open');
+			$('body').removeClass('is-fixed');
 		}		
 	});
 
