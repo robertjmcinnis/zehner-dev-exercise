@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zehner Dev Exercise</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+	
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="js/lib/instagram.min.js"></script>
+	<script type="text/javascript" src="js/lib/slick.min.js"></script>	
+	<script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body class="home">
+
+	
+	
+
+	<!-- COMPONENT: Notification Bar -->
+	<div class="notification-bar">
+		<div class="notification-bar__content">
+			Free Shipping on Orders Over $49
+		</div>
+	</div>
+
+
+	<!-- SECTION: HEADER -->
+	<header class="header">
+
+		<a class="link--mobile-menu" href="#">
+			<svg class="link--menu" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+		  		<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+			</svg>
+			<svg class="link--cancel" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+			  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+			</svg>
+		</a>
+
+		<ul class="header__links header__links--left">
+			<li class="header__mega-nav">Shop</li>
+			<li>About 4moms</li>		
+		</ul>
+
+		<a href="/" class="header__logo">
+			<img src="images/logo-black.jpg">
+		</a>
+
+		<ul class="header__links header__links--right">
+			<li class="link--location">
+				<a href="">Location</a>
+			</li>
+			<li class="link--support">
+				<a href="#">
+					Support
+				</a>
+			</li>		
+			
+			<!-- Search Link -->
+			<li>
+				<a href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+				 		<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+					</svg>		
+				</a>
+			</li>		
+
+			<!-- Account Link -->
+			<li class="link--account">
+				<a href="#">
+					<!-- The below icon would ideally change based on login status -->
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+						<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+						<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+					</svg>
+				</a>
+			</li>		
+			
+			<!-- Cart Link -->
+			<li>
+				<a href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+						<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+					</svg>
+				</a>
+			</li>		
+		</ul>
+	</header>
+
+
+	<!-- SECTION: HEADER -->
+	<div class="mega-nav">
+		<div class="mega-nav__tabs">
+		    <ul>
+				<li class="mega-nav__tab-container is-active">
+					<a href="#" class="button button--plain mega-nav__tab">						
+						Shop All
+						<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>						
+					</a>
+					<a href="#" class="mega-nav__tab-content">
+						<img class="mega-nav__image" src="images/shop-all.jpg">
+						<p class="mega-nav__tab-description">High tech baby products. With multi-tasking parents in mind.</p>
+					</a>
+				</li>
+				<li class="mega-nav__tab-container">
+					<a href="#" class="button button--plain mega-nav__tab">	
+						Seats
+						<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+					</a>
+					<a href="#" class="mega-nav__tab-content">
+						<img class="mega-nav__image" src="images/seats.jpg">
+						<p class="mega-nav__tab-description">Nam libero tempore, cum soluta.</p>
+					</a>
+				</li>
+				<li class="mega-nav__tab-container">
+					<a href="#" class="button button--plain mega-nav__tab">	
+						Playards
+						<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+					</a>
+					<a href="#" class="mega-nav__tab-content">
+						<img class="mega-nav__image" src="images/shop-all.jpg">
+						<p class="mega-nav__tab-description">Quis autem vel eum iure reprehenderit qui in ea.</p>
+					</a>
+				</li>
+				<li class="mega-nav__tab-container">
+					<a href="#" class="button button--plain mega-nav__tab">	
+						Feeding
+						<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+					</a>
+					<a href="#" class="mega-nav__tab-content">
+						<img class="mega-nav__image" src="images/seats.jpg">
+						<p class="mega-nav__tab-description">Et harum quidem rerum facilis est et expedita distinctio.</p>
+					</a>
+				</li>
+				<li class="mega-nav__tab-container">
+					<a href="#" class="button button--plain mega-nav__tab">	
+						Bassinets
+						<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+					</a>
+					<a href="#" class="mega-nav__tab-content">
+						<img class="mega-nav__image" src="images/shop-all.jpg">
+						<p class="mega-nav__tab-description">At vero eos et accusamus et iusto odio dignissimos.</p>
+					</a>
+				</li>
+				<li class="mega-nav__tab-container">
+					<a href="#" class="button button--plain mega-nav__tab">	
+						Bath
+						<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+					</a>
+					<a href="#" class="mega-nav__tab-content">
+						<img class="mega-nav__image" src="images/seats.jpg">
+						<p class="mega-nav__tab-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+					</a>
+				</li>
+				<li class="mega-nav__tab-container">
+					<a href="#" class="button button--plain mega-nav__tab">	
+						Mobile
+						<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+					</a>
+					<a href="#" class="mega-nav__tab-content">
+						<img class="mega-nav__image" src="images/shop-all.jpg">
+						<p class="mega-nav__tab-description">Quis autem vel eum iure reprehenderit qui in ea.</p>
+					</a>
+				</li>
+				<li class="mega-nav__tab-container mega-nav__tab-container--divide">
+					<a href="#" class="button button--plain mega-nav__tab">	
+						Accessories
+						<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+					</a>
+					<a href="#" class="mega-nav__tab-content">
+						<img class="mega-nav__image" src="images/seats.jpg">
+						<p class="mega-nav__tab-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+					</a>
+				</li>
+				<li class="mega-nav__tab-container">
+					<a href="#" class="button button--plain mega-nav__tab">	
+						Spare Parts
+						<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+					</a>
+					<a href="#" class="mega-nav__tab-content">
+						<img class="mega-nav__image" src="images/shop-all.jpg">
+						<p class="mega-nav__tab-description">Et harum quidem rerum facilis est et expedita distinctio.</p>
+					</a>
+				</li>
+		    </ul>
+		</div>
+	</div>
+	
+
+	<main>
+		
+		<!-- SECTION: Hero -->	
+
+		<!-- COMPONENT: Hero -->
+		<!-- 
+			- The background-image is inline CSS, because it will be coming from a CMS.  Ideally, I would srcset/lazy size responsive images here 
+			- I would usually add another inline style to control the position of the hero image, and text/button.  It would come from the CMS.  For this example, I used a utility class to adjust the position (hero--right).
+		-->
+		<section class="hero hero--right" style="background-image: url(images/hero.jpg);">
+			<div class="hero__body">
+				<h1 class="hero__title">Freeing up your hands.  So you can do more.</h1>
+				<p class="hero__subtitle">Lorem upsum dolor sit amet, consectuetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+				<a href="#" class="hero__link button button--solid">Shop Bassinets</a>
+			</div>
+		</section>
+
+		<!-- ENDSECTION Hero -->
+
+
+
+
+		<!-- SECTION: Info Cards -->
+		<section class="info-cards">
+
+			<!-- COMPONENT: Info Card -->
+			<div class="info-card">
+				<img src="images/corona-virus.jpg" class="info-card__image">	
+				<h4 class="info-card__title">Functional Design</h3>
+				<p class="info-card__description">Products designed to make patents lives easier</p>
+			</div>
+
+			<!-- COMPONENT: Info Card -->
+			<div class="info-card">
+				<img src="images/target.jpg" class="info-card__image">	
+				<h4 class="info-card__title">Parent Tested</h3>
+				<p class="info-card__description">Tested with real parents to enrure the best results</p>
+			</div>
+
+			<!-- COMPONENT: Info Card -->
+			<div class="info-card">
+				<img src="images/nodes.jpg" class="info-card__image">	
+				<h4 class="info-card__title">Technology</h3>
+				<p class="info-card__description">Tested w(FPO)arents to ensure the best results</p>
+			</div>
+		</section>
+		<!-- ENDSECTION: Info Cards -->
+
+
+
+
+		<!-- SECTION: Link Blocks -->
+		<section class="feature-blocks">
+
+			<!-- COMPONENT: Link Block -->
+			<a href="" class="feature-block" style="background-image: url(images/CollectionCards_Seats_Product_f1b8e43e-53b5-4b6e-9b65-f225ee0c1f35_1800x.png)">		
+				<div class="feature-block__title button button--plain">	
+					Shop Seats <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+				</div>		
+			</a>
+
+			<!-- COMPONENT: Link Block -->
+			<a href="#" class="feature-block" style="background-image: url(images/CollectionCards_Playards_Product_02_800x.png)">			
+				<div class="feature-block__title button button--plain">	
+					Shop Seats <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+				</div>	
+			</a>
+
+			<!-- COMPONENT: Link Block -->
+			<a href="#" class="feature-block" style="background-image: url(images/CollectionCards_Feeding_Product_e0ae0f7f-c2ea-4a5c-9deb-0de91fe1bc77_800x.png)">			
+				<div class="feature-block__title button button--plain">	
+					Shop Feeding <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+				</div>	
+			</a>
+
+			<!-- COMPONENT: Link Block -->
+			<a href="#" class="feature-block" style="background-image: url(images/CollectionCards_Bassinets_Product_V2_1800x.png)">			
+				<div class="feature-block__title button button--plain">	
+					Shop Bassinets <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+				</div>	
+			</a>
+
+			<!-- COMPONENT: Link Block -->
+			<a href="#" class="feature-block" style="background-image: url(images/CollectionCards_Tub_Product_V2_3346b107-56c1-4fcc-b744-f3ede1f07e7d_800x.png)">			
+				<div class="feature-block__title button button--plain">	
+					Shop Tubs <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+				</div>	
+			</a>
+
+			<!-- COMPONENT: Link Block -->
+			<a href="#" class="feature-block" style="background-image: url(images/CollectionCards_Accessories_Product_43abddb2-f58d-45c0-ac33-193570d0278f_800x.png)">			
+				<div class="feature-block__title button button--plain">	
+					Shop Mobiles <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+				</div>	
+			</a>
+		</section>
+		<!-- ENDSECTION: Link Blocks -->
+
+
+
+
+		<!-- SECTION: Featured Product Blocks -->
+		<section class="featured-product">
+			<!-- COMPONENT: Hero -->
+			<!-- These below Hero components will be variations of the mai hero.  One will be centered, with an image. -->
+			<!-- The second block will be a hero component, only with a background image. -->
+			<div class="hero hero--mini">
+
+				<div class="hero__body">
+					<img src="images/mmR4_Grey_front_e9ec84d4-459c-47ed-8846-62fdbb178eee_800x.png" class="hero__image">
+					<h3 class="hero__title">rockaRoo&reg;</h3>
+					<p class="hero__subtitle">Back and forth gliding motion babies love, in a compact size.</p>
+					<a href="#" class="hero__link button button--solid">Shop Now</a>
+				</div>
+			</div>
+			<!-- ENDCOMPONENT: Hero -->
+
+			<!-- COMPONENT: Hero -->
+			<div class="hero hero--image" style="background-image: url(images/HomePage_fifty_mR_lifestyle_02_900x.jpeg);">
+				<div class="hero__body">
+					
+				</div>
+			</div>
+			<!-- ENDCOMPONENT: Hero -->
+		</section>
+
+
+
+		<!-- COMPONENT: Hero -->
+		<section class="hero hero--double hero--double">
+			<div class="hero__background-image-container">
+				<div class="hero__background-image hero__background-image--40" style="background-image: url(images/10_40.60_breeze_left_800x.jpg);"></div>
+				<div class="hero__background-image hero__background-image--60" style="background-image: url(images/10_40.60_breeze_right_1800x.jpg);"></div>
+			</div>
+
+			<div class="hero__body">
+				<div class="hero__body-inner">
+					<h3 class="hero__title">Playards</h3>
+					<p class="hero__subtitle">Playards are hard to use. <br>The breeze&reg; plus is easy.</p>
+					<a href="#" class="hero__link button button--solid">Shop Now</a>
+				</div>
+			</div>
+		</section>
+
+		
+
+		
+		<!-- SECTION: Reviews -->
+		<!-- I'm assuming that a review system would be in place to pull in data -->
+		<section class="reviews">
+			
+			<!-- COMPONENT: Review -->
+			<div class="review">
+				<div class="review__inner-container">
+					<div class="review__rating">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>					
+					</div>
+					<p class="review__quote">The Breeze Plus Playard is the #1 baby product that I didn’t know I needed before having our first child, but now could not live without!</p>
+					<div class="review__source">Bryan</div>
+				</div>
+			</div>
+
+			<!-- COMPONENT: Review -->
+			<div class="review">
+				<div class="review__inner-container">
+					<div class="review__rating">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+						</svg>
+					</div>
+					<p class="review__quote">From the sleek design, technology, and overall quality, the mamaRoo sleep bassinet is by far the best I have used and seen on the market.</p>
+					<div class="review__source">Shaye</div>
+				</div>
+			</div>
+
+			<!-- COMPONENT: Review -->
+			<div class="review">
+				<div class="review__inner-container">
+					<div class="review__rating">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16"><path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/></svg>
+					</div>
+					<p class="review__quote">We love our cleanwater tub! Knowing the temp constantly is a great feature and having the dirty water cycle out just makes sense! It is so easy to use, our baby fits in it so well!</p>
+					<div class="review__source">Alison</div>
+				</div>
+			</div>
+
+		</section>
+		<!-- ENDSECTION: Reviews -->
+
+
+
+		<!-- SECTION: Instagram -->
+		<!-- I used a script to bring in the Instagram Feed, rather than using the API from scratch. -->
+		<!-- The user account is placeholder. I think the rules changed recently? TODO: make this properly-->
+		<section class="instagram">
+			<h2 class="instagram__section-title"><a href="https://www.instagram.com/explore/tags/4moms/" target="_blank">#4moms</a></h2>
+			<div id="instagram__feed"></div>
+		</section>
+		<!-- ENDSECTION: Instagram -->
+
+
+		<!-- SECTION: 4moms Cares -->
+		<!-- This isn't really a component, I see it as just some plain text, with Info Cards components inside of it.  -->
+		<section class="cares">
+			<div class="section-text-block">
+				<h2 class="section-title">4moms Cares</h2>
+				<p class="section-description">The 4moms Cares program dramatically impacts the lives of children and families in need through meaningful product donations, hospital discounts and supporting our local communities.</p>
+			</div>
+
+			<div class="info-cards">
+
+				<!-- COMPONENT: Info Card -->
+				<div class="info-card">
+					<img src="images/mamaroo_800x.png" class="info-card__image">	
+					<h4 class="info-card__title">Functional Design</h3>
+					<p class="info-card__subtitle">$1,555,440</p>
+					<p class="info-card__description">4moms Products Donated</p>
+				</div>
+
+				<!-- COMPONENT: Info Card -->
+				<div class="info-card">
+					<img src="images/Hospital_Icon_800x.png" class="info-card__image">	
+					<h4 class="info-card__title">Parent Tested</h3>
+						<p class="info-card__subtitle">590</p>
+					<p class="info-card__description">Hospitials Partnered</p>
+				</div>
+
+				<!-- COMPONENT: Info Card -->
+				<div class="info-card">
+					<img src="images/Volunteer_Icon_800x.png" class="info-card__image">	
+					<h4 class="info-card__title">Technology</h3>
+					<p class="info-card__subtitle">487</p>
+					<p class="info-card__description">4moms Hours Volunteered</p>
+				</div>
+			</div>
+
+			<a href="#" class="button button--solid">Learn More</a>
+
+		</section>
+		<!-- ENDSECTION: 4moms Cares -->
+
+
+
+		<!-- SECTION: Logo List -->
+		<section>
+			<div class="logo-carousel">
+				<a href="#">
+					<img src="images/Trustbar_cribsienew_800x.jpeg" class="logo-carousel__image">
+				</a>
+				<a href="#">
+					<img src="images/Trustbar_thebump_2020_800x.jpeg" class="logo-carousel__image">
+				</a>
+				<a href="#">
+					<img src="images/Trustbar_workingmother_800x.jpeg" class="logo-carousel__image">
+				</a>
+				<a href="#">
+					<img src="images/Trustbar_cribsiewinner_2020_800x.jpeg" class="logo-carousel__image">
+				</a>
+				<a href="#">
+					<img src="images/Trustbar_cesinnovation_800x.jpeg" class="logo-carousel__image">
+				</a>
+				<a href="#">
+					<img src="images/Trustbar_babylist_800x.jpeg" class="logo-carousel__image">
+				</a>
+			</div>
+		</section>
+		<!-- ENDSECTION: 4moms Cares -->
+
+
+	</main>
+
+
+
+	<!-- SECTION: FOOTER -->
+	<!-- This might be one of the few components that have been styled for mobile properly (ran out of time!) -->
+	<footer class="footer">
+		<div class="footer-main">
+		
+			<div class="footer-links">
+				<!-- COMPONENT: Footer List -->
+				<div class="footer-list">
+					<h4 class="footer-list__heading accordion__title">Shop</h4>
+
+					<i class="accordion__icon">
+						<div class="line-01"></div>
+						<div class="line-02"></div>
+		            </i>
+
+					<ul class="footer-list__list accordion__content">
+						<li class="footer-list__list-item"><a href="#">RockRoo Infant Seat</a></li>
+						<li class="footer-list__list-item"><a href="#">Breeze Plus Playard</a></li>
+						<li class="footer-list__list-item"><a href="#">Breeze Go Playground</a></li>
+						<li class="footer-list__list-item"><a href="#">High Chair</a></li>				
+					</ul>
+				</div>
+
+				<!-- COMPONENT: Footer List -->
+				<div class="footer-list">
+					<h4 class="footer-list__heading accordion__title">Shopping Help</h4>
+					
+					<i class="accordion__icon">
+						<div class="line-01"></div>
+						<div class="line-02"></div>
+		            </i>
+
+					<ul class="footer-list__list accordion__content">
+						<li class="footer-list__list-item"><a href="#">Find a Store</a></li>
+						<li class="footer-list__list-item"><a href="#">Account</a></li>
+						<li class="footer-list__list-item"><a href="#">Shipping & Returns</a></li>
+						<li class="footer-list__list-item"><a href="#">About Affirm Fianancing</a></li>				
+					</ul>
+				</div>
+				
+				<!-- COMPONENT: Footer List -->
+				<div class="footer-list">
+					<h4 class="footer-list__heading accordion__title">Support</h4>
+
+					<i class="accordion__icon">
+						<div class="line-01"></div>
+						<div class="line-02"></div>
+		            </i>
+					
+					<ul class="footer-list__list accordion__content">
+						<li class="footer-list__list-item"><a href="#">Support Center</a></li>
+						<li class="footer-list__list-item"><a href="#">Product Registration</a></li>
+						<li class="footer-list__list-item"><a href="#">Safety & Recall</a></li>								
+					</ul>
+				</div>
+
+				<!-- COMPONENT: Footer List -->
+				<div class="footer-list">
+					<h4 class="footer-list__heading accordion__title">Company</h4>
+
+					<i class="accordion__icon">
+						<div class="line-01"></div>
+						<div class="line-02"></div>
+		            </i>
+					
+					<ul class="footer-list__list accordion__content">
+						<li class="footer-list__list-item"><a href="#">Careers</a></li>
+						<li class="footer-list__list-item"><a href="#">Contact Us</a></li>
+						<li class="footer-list__list-item"><a href="#">About Us</a></li>
+						<li class="footer-list__list-item"><a href="#">4moms Cares</a></li>				
+						<li class="footer-list__list-item"><a href="#">Media Kit Cares</a></li>				
+						<li class="footer-list__list-item"><a href="#">Patents</a></li>				
+					</ul>
+				</div>
+			</div>
+			
+
+			<div class="footer-contact">
+				
+				<div class="footer-contact__inner">
+					<img src="images/logo-footer.jpg" class="footer-contact__logo">
+					<p class="footer-contact__description">Get the latest 4moms news and offers</p>
+					
+					<form method="post" action="" id="contact_form" accept-charset="UTF-8" class="contact-form">
+						<input type="email" name="contact" id="email" class="form-text" value="" placeholder="" autocorrect="off" autocapitalize="off">
+						<button type="submit" id="subscribe" class="button button--plain button--newsletter">
+						Submit  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+						</button>				   
+					  </form>
+
+
+					<!-- The SVG's in this widget would be an included.  The reason I chose inline svgs was so I can control color. -->
+					<ul class="footer-contact__social">
+						<li class="footer-contact__social-item">
+							<a href="" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+								 	<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+								</svg>
+							</a>
+						</li>
+						<li class="footer-contact__social-item">
+							<a href="" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+									<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+								</svg>							
+							</a>
+						</li>
+						<li class="footer-contact__social-item">
+							<a href="" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+									<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+								</svg>
+							</a>
+						</li>
+						<li class="footer-contact__social-item">
+							<a href="" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+									<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-7 20c-.825 0-1.62-.125-2.369-.357.326-.531.813-1.402.994-2.098l.499-1.901c.261.498 1.023.918 1.833.918 2.414 0 4.152-2.219 4.152-4.976 0-2.643-2.157-4.62-4.933-4.62-3.452 0-5.286 2.317-5.286 4.841 0 1.174.625 2.634 1.624 3.1.151.07.232.039.268-.107l.222-.907c.019-.081.01-.15-.056-.23-.331-.4-.595-1.138-.595-1.825 0-1.765 1.336-3.472 3.612-3.472 1.965 0 3.341 1.339 3.341 3.255 0 2.164-1.093 3.663-2.515 3.663-.786 0-1.374-.649-1.185-1.446.226-.951.663-1.977.663-2.664 0-.614-.33-1.127-1.012-1.127-.803 0-1.448.831-1.448 1.943 0 .709.239 1.188.239 1.188s-.793 3.353-.938 3.977c-.161.691-.098 1.662-.028 2.294-2.974-1.165-5.082-4.06-5.082-7.449 0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8z"/>
+								</svg>
+							</a>
+						</li>				
+						<li class="footer-contact__social-item">
+							<a href="" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+								  	<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+								</svg>
+							</a>
+						</li>				
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="footer-fineprint">
+			<span class="footer-fineprint__copyright">&copy; 2019 4moms.  All Rights Reserved.</span>
+			<span><a href="">Terms &amp; Conditions</a></span>
+			<span><a href="">Privacy Policy</a></span>		
+		</div>	
+	</footer>
+	<!-- ENDSECTION: FOOTER -->
+
+</body>
+</html>
+
+
+
+
+
+

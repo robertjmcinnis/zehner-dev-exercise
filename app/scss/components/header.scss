@@ -1,0 +1,132 @@
+// GLOBAL: Header
+
+.header {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px $gutter--large;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, .05);
+	z-index: $zIndex--100;
+	background-color: $white;
+    line-height: 82px;
+
+    @media only screen and (max-width: 1023px) {
+    	padding: 0 $margin--base;
+    }
+
+	.header__logo {
+		position: absolute;
+		transform: translate(-50%, 0%);
+		left: 50%;
+		top: 14px;
+		
+		@media only screen and (max-width: 1023px) {
+			top: 10px;
+		}
+
+		img {
+			max-width: 150px;
+
+			@media only screen and (max-width: 1023px) {
+				width: 110px;
+			}
+		}
+	}
+
+	a {
+		color: $black;
+		
+		svg {
+			width: 21px;
+    		height: 21px;
+    		transform: translateY(5px);
+		}
+	}
+
+	.header__links {
+
+		li {
+			display: inline-block;
+			cursor: pointer;
+			font-weight: 700;
+		}
+
+		&.header__links--right {
+			li {
+				margin-left: $margin--xLarge;
+
+				@media only screen and (max-width: 1023px) {
+					margin-left: $margin--base;
+				}
+			}
+
+			@media only screen and (max-width: 1023px) {
+				margin-left: $margin--base;
+				width: 100%;
+			    display: flex;
+			    justify-content: flex-end;
+			}
+		}
+
+		&.header__links--left {
+			li {
+				margin-right: $margin--xLarge
+			}
+
+			@media only screen and (max-width: 1023px) {
+				display: none;
+			}
+		}
+
+		.link--location,
+		.link--support {
+			@media only screen and (max-width: 1023px) {
+				display: none;
+			}
+		}
+
+		.link--account {
+			@media only screen and (max-width: 1023px) {
+				position: absolute;
+    			left: 40px;
+			}
+		}
+
+	}
+
+
+	.link--mobile-menu {
+		display: none;		
+		
+		@media only screen and (max-width: 1023px) {
+			display: block;
+
+			.link--menu {
+				display: block;
+				transform: translateY(0px);
+			}
+
+			.link--cancel {
+				display: none;
+				transform: translateY(2px);
+				width: 28px;
+    			height: 28px;
+			}
+
+			&.is-open {
+				.link--menu {
+					display: none;
+				}
+
+				.link--cancel {
+					display: block;
+				}
+			}
+
+
+		}
+	}
+
+
+}

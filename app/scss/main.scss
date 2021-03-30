@@ -1,0 +1,55 @@
+// -------------------------------------
+//   Style.scss
+// -------------------------------------
+// ----- Contains an import section for libraries, core, components
+
+
+
+// -------------------------------------
+//   Core
+// -------------------------------------
+@import "reset";
+@import "settings";
+
+
+
+// -------------------------------------
+//   Libraries
+// -------------------------------------
+// @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+
+
+
+// ----- Base - Base-level tags (body, p, etc.) ----- //
+@import "global";
+@import "typography";
+@import "layout";
+@import "form";
+@import "button";
+
+
+// ----- Globals - Header, Footer, etc ----- //
+@import "components/header";
+@import "components/footer";
+@import "components/footer-contact";
+
+
+// ----- Section Specific ----- //
+@import "section/section";
+
+
+// ----- Section Specific ----- //
+
+
+// ----- Components - Component files. ----- //
+@import "components/notification-bar";
+@import "components/hero";
+@import "components/footer-list";
+@import "components/accordion";
+@import "components/mega-nav";
+@import "components/info-card";
+@import "components/feature-block";
+@import "components/review";
+@import "components/instagram";
+@import "components/logo-carousel";

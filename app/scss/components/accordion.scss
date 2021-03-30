@@ -1,0 +1,42 @@
+// COMPONENT: Accordion
+
+.accordion__title {
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+}
+
+.accordion__icon {
+    position: absolute;
+    top: 0;
+    right: 16px;
+    transform: translateY(-50%);
+}
+
+.accordion__icon .line-01,
+.accordion__icon .line-02 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 1px;
+    background-color: $white;
+    transition: 0.3s;
+}
+
+.accordion__icon .line-02 {
+    transform: rotate(90deg);
+}
+
+.accordion__content {
+    display: none;
+    color: #6F6F6F;
+}
+
+.accordion__content--description h4 {
+    display: none;
+}
+
+.accordion--open .line-02 {
+    transform: rotate(0deg);
+}

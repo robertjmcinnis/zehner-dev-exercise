@@ -1,0 +1,36 @@
+// COMPONENT: Footer Contact
+
+// Base styles of the info card
+.info-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	max-width: 220px;
+	padding: $margin--base;
+
+	.info-card__image {
+		width: auto;
+		height: 100%;
+		max-width: 70px;
+		max-height: 70px;
+		margin-bottom: $margin--base;
+	}
+
+	.info-card__title {
+		margin-bottom: $margin--base;
+		font-size: $fontSize--base;
+	}
+	
+	.info-card__description {
+		font-size: $fontSize--small;
+		text-align: center;
+		color: $grey--xxDark;
+	}
+
+	.info-card__subtitle {
+		margin-bottom: $fontSize--base;
+		color: $black;
+		font-weight: 700;
+	}
+}

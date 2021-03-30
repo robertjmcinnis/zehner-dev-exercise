@@ -1,0 +1,80 @@
+// COMPONENT: Footer Contact
+
+.footer-contact {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	flex-basis: 37%;
+
+	@media only screen and (max-width: 1023px) {
+		flex-basis: 100%;
+		margin-bottom: 40px;
+		max-width: 400px;
+	}
+
+	.footer-contact__social {
+		margin-top: 20px;
+
+		li {
+			display: inline;
+		}
+	}
+
+	.form-text{
+		border: none;
+	    background: transparent;
+	    border-bottom: 1px solid $white;
+	    width: 100%;
+	    color: $white;
+	    height: 50px;
+	    line-height: 50px;
+		max-width: calc(100% - 120px);
+	    padding-right: 120px;
+
+	    &:focus {
+			outline: none;
+	    }
+	}
+
+	.footer-contact__inner {
+		max-width: 340px;
+		width: 100%;
+		
+		@media only screen and (max-width: 1023px) {
+			max-width: 100%;
+		}
+	}
+
+	.button--newsletter {
+		position: absolute;
+		top: 0;
+		right: 0;
+		color: $white;
+		padding: 0 40px 0 20px;
+	}
+
+	.contact-form {
+		position: relative;
+	}
+
+	.footer-contact__social-item {
+		margin: 0 15px 0 0;
+
+		svg {
+		    max-height: 23px;
+		    max-width: 23px;
+		    height: 100%;
+		    width: 100%;
+		}
+	}
+
+	.footer-contact__description {
+		margin: 10px 0;
+		font-size: $fontSize--small;
+	}
+
+	.footer-contact__logo {
+		max-width: 140px;
+		margin-bottom: 20px;
+	}
+}

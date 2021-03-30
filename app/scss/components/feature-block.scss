@@ -1,0 +1,32 @@
+.feature-block {
+	background-color: $grey--xxxLight;
+	background-position: 50% 50%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	flex-basis: 50%;
+	height: calc(50vw - #{$gutter--large}*2);
+	flex-basis: calc(50% - 10px);
+    margin: 5px;
+    display: flex;
+
+	@media only screen and (max-width: 1023px) {
+		flex-basis: 100%;
+		background-position: 100% 50%;
+		background-size: contain;
+		height: auto;
+		margin: 0 0 5px 0;
+		background-position: 100% 50%;
+	}
+
+	.feature-block__title {
+		font-size: $fontSize--xLarge;
+		padding: 30px 40px;
+		
+		svg {
+			right: -30px;
+			width: 28px;
+    		height: 28px;
+    		margin-top: 2px;
+		}
+	}
+}

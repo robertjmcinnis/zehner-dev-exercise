@@ -1,0 +1,95 @@
+
+// Standard Shades
+$white					: #fff;
+$grey--xxxLight			: #f2f2f2;
+$grey--xxLight			: #eeeeee;
+$grey--xLight			: #e3e3e3;
+$grey--light			: #cbcbcb;
+$grey--base				: #9f9f9f;
+$grey--dark				: #8c8c8c;
+$grey--xDark			: #636363;
+$grey--xxDark			: #444444;
+$grey--xxxDark			: #2b2b2b;
+$black					: #000;
+
+
+
+// Brand Colors
+$blue					: #5ea6c5;
+
+
+// Specialty Colors
+$color-highlight		: #ffff00;
+$color-twitter			: #33aade;
+$color-linkedin			: #1985bc;
+$color-facebook			: #224583;
+$color-google			: #d14a33;
+$color-email			: $grey--xxDark;
+
+
+// Font families
+$fontFamily--base    	: 'Mulish', sans-serif;
+$fontFamily--header 	: 'Mulish', sans-serif;
+
+
+// Font Sizes
+$fontBase				: 16px/1.5 $fontFamily--header;
+$fontSize--xxxLarge		: 36px;
+$fontSize--xxLarge		: 28px;
+$fontSize--xLarge		: 24px;
+$fontSize--large		: 20px;
+$fontSize--base			: 16px;
+$fontSize--small		: 14px;
+$fontSize--xSmall		: 13px;
+$fontSize--xxSmall		: 12px;
+$fontSize--xxxSmall		: 10px;
+$fontSize--xxxxSmall    : 8px;
+
+
+// Margins
+$margin--xSmall			: 5px;
+$margin--small			: 10px;
+$margin--base			: 20px;
+$margin--large			: 30px;
+$margin--xLarge			: 40px;
+$margin--xxLarge		: 60px;
+$margin--xxxLarge		: 80px;
+$margin--xxxxLarge		: 100px;
+
+
+// Gutters
+$gutter--small          : $margin--base;
+$gutter--large          : $margin--xxxxLarge;
+
+
+// Z-Indexes
+$zIndex--100			: 100;
+$zIndex--200			: 200;
+$zIndex--300			: 300;
+$zIndex--400			: 400;
+$zIndex--900			: 900;
+$zIndex--modal			: $zIndex--900;
+
+
+
+// General
+$radius--base			: 5px;
+$border--base			: 1px solid $black;
+$border--large			: 5px solid $black;
+$transition--base		: 0.3s ease all; 
+
+
+
+//
+// 2 Components
+//
+
+// Buttons
+$buttonPadding--xxSmall	: 0.3em .6em;
+$buttonPadding--xSmall	: 12px 20px;
+$buttonPadding--small	: 0.6em 1em;
+$buttonPadding--base	: 1em 1.2em;
+$buttonPadding--large	: 1.2em 1.4em;
+
+$buttonRadius--base		: $radius--base;
+

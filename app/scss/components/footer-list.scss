@@ -1,0 +1,30 @@
+// COMPONENT: Footer List
+
+.footer-list {
+	position: relative;
+	padding-right: 10px; 
+
+	.footer-list__heading {
+		font-size: $fontSize--small;
+		font-weight: 700;
+		margin-bottom: 35px;
+		pointer-events: none;
+
+		@media only screen and (max-width: 1023px) {
+			pointer-events: initial;
+		}
+	}
+
+	.footer-list__list {
+		font-size: $fontSize--xxSmall;
+
+		@media only screen and (max-width: 1023px) {
+			padding-bottom: $margin--large;
+		}
+	}
+
+	.footer-list__list-item {
+		margin-bottom: $margin--base;
+		font-size: $fontSize--small;
+	}
+}

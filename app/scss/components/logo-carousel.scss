@@ -1,0 +1,14 @@
+// COMPONENT: Logo Carousel
+
+.logo-carousel {
+	margin: $margin--large 0;
+	display: flex;
+    justify-content: center;
+
+	.logo-carousel__image {
+		max-width: 100px;
+		width: 100%;
+		margin: 0 20px;
+		filter: grayscale(100%);
+	}
+}

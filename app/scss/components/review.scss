@@ -1,0 +1,59 @@
+// COMPONENT: Review 
+
+.review {
+	width: 100%;
+	text-align: center;
+	
+	.review__inner-container {
+		max-width: 30%;
+		width: 100%;
+		margin: 0 auto;
+		background-color: $grey--xxxLight;
+		padding: 120px 150px;
+		
+		@media only screen and (max-width: 1023px) {
+			padding: 40px 0;
+			max-width: 100%;
+		}
+	}
+	.review__rating {
+		svg {
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+	.review__quote {
+		font-size: 25px;		
+	}
+
+	.review__source {
+		font-size: 16px;
+		font-weight: 700;	
+		margin-top: $margin--xLarge;
+	}
+}
+
+.review__next {
+	position: absolute;
+	top: 50%;
+	right: 15%;
+	transform: translate(0, -50%);
+	z-index: 1;
+	
+	@media only screen and (max-width: 1023px) {
+		display: none !important;
+	}
+}
+
+.review__prev {
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	transform: translate(0, -50%);
+	z-index: 1;
+
+	@media only screen and (max-width: 1023px) {
+		display: none !important;
+	}
+}
